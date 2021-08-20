@@ -27,10 +27,16 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./assets/css/owl.carousel.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top gray-dark">
+    <!-- navigation bar start -->
+    <nav
+      class="navbar navbar-light navbar-expand-lg gray-dark float-panel"
+      data-top="0"
+      data-scroll="300"
+    >
       <div class="container-fluid mynav">
         <a href="/" class="navbar-brand">
           <img
@@ -131,7 +137,7 @@
             </li>
           </ul>
           <ul>
-            <li class="nav-item lang">
+            <li class="lang">
               <div class="btn-group" role="group" aria-label="First group">
                 <button
                   type="button"
@@ -172,7 +178,9 @@
         </div>
       </div>
     </nav>
+    <!-- navigation bar end -->
 
+    <!-- cover header start -->
     <section class="cover-area">
       <img
         src="./assets/images/main.jpg"
@@ -188,6 +196,97 @@
         <a href="services.html" class="boxed-btn">See Our Services</a>
       </div>
     </section>
+    <!-- cover header end -->
+
+    <!-- about area start -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-md-6 index-about">
+            <img src="./assets/images/exp.jpg" alt="" height="550px" />
+            <div class="experience">
+              <h1>1</h1>
+              <span>Years of Experience</span>
+            </div>
+          </div>
+          <div class="col-xl-5 offset-xl-1 col-md-6">
+            <div class="about_info">
+              <div class="section_title">
+                <span class="sub_heading">About Us</span>
+                <h3>
+                  MARKETING STRATEGY & ADVERTISING
+                </h3>
+                <div class="seperator"></div>
+              </div>
+              <p>
+                JKT International Myanmar is a growing Myanmar-Japan corporate
+                company in education, business and technology.
+              </p>
+              <ul class="about_list">
+                <li>Oversesa Employment Service (only Japan)</li>
+                <li>IT Services</li>
+                <li>Business Consultant Service</li>
+                <li>Travel and Tour</li>
+                <li>(Japanese Language, Vocational and HR) Training</li>
+              </ul>
+              <a href="about.html" class="about-boxed-btn">ABOUT US</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about area end -->
+
+    <!-- BOD Team section start -->
+    <section class="bod-section">
+      <div class="container-fluid">
+        <h2 class="text-center bod_header">Board of Directors</h2>
+        <div class="owl-carousel owl-theme" id="owl-bod">
+          <div class="single-item row">
+            <div class="col-xl-6 col-md-6 text-center">
+              <blockquote class="bod-blockquote"> 
+                I have stepped in the business field since late 2007, 
+                and started my own language school in 2014. Since then, 
+                producing human resources had become the reason to start JKT Myanmar International Co., Ltd. 
+                Since I would like to fulfill the needs between the problem of joblessness in Myanmar and 
+                the lack of human resources in Japan, 
+                JKT was born with the aim of performing as a bridge in the educational sector, 
+                business sector and cultural sector between the two countries. <br>
+              </blockquote>
+              <div class="bod-name">
+                <h4>Ms. Thuzar Win Thu (Okano Yuuko)</h4>
+                <span>President and CEO</span>
+              </div> 
+            </div>
+            <div class="col-xl-6 col-md-6">
+              <img src="./assets/images/about/shachou.jpg" alt="BOD images" width="370" height="470">
+            </div>
+          </div>
+          <div class="single-item row text-center">
+            <div class="col-xl-6 col-md-6">
+              <blockquote class="bod-blockquote"> 
+                “Recently, the US Federal government banned online casinos from operating in America by
+                making it illegal to
+                transfer money to them through any US bank or payment system. As a result of this law, most
+                of the popular
+                online casino networks such as Party Gaming and PlayTech left the United States. Overnight,
+                online casino
+              </blockquote>
+              <div class="bod-name">
+                <h4>Teruhisa Saito</h4>
+                <span>Japanese Director</span>
+              </div>
+            </div>
+            <div class="col-xl-5 col-md-6">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BOD Team section end -->
+
+    <!-- footer area start -->
     <footer class="footer">
       <div class="left">
         <a href="/index.html"><span>JKT</span>Myanmar International </a>
@@ -247,6 +346,7 @@
         </div>
       </div>
     </footer>
+    <!-- footer area start -->
 
     <!-- script -->
     <script
@@ -264,5 +364,19 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/float-panel.js"></script>
+
+    <!-- Inline JS Here -->
+    <script>
+      $(document).ready(function() {
+        $("#owl-bod").owlCarousel({
+            // navigation : true, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true
+        });
+      });
+    </script>
   </body>
 </html>
