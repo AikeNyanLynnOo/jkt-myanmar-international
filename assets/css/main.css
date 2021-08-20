@@ -161,15 +161,25 @@
 
 @media only screen and (max-width: 991px) {
   #navbarCollapse {
-    padding-bottom : 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 20px 0px #ddd;
+    margin-top: 10px;
   }
-  
-  #navbarCollapse .dropdown-menu ,#navbarCollapse .nav-item i{
-    display : none;
+
+  #navbarCollapse .dropdown-menu,
+  #navbarCollapse .nav-item i {
+    display: none;
   }
-  
-  #navbarCollapse ul:last-of-type .btn-group{
-    text-align : center;
+  #navbarCollapse *:not(i) {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  #navbarCollapse .nav-item a {
+    padding: 8px 0;
+  }
+  #navbarCollapse ul:last-of-type .btn-group {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -200,6 +210,12 @@
   }
   .cover-area .cover-text p {
     font-size: 15px;
+  }
+  #navbarCollapse ul:last-of-type li:last-of-type {
+    border-bottom: none;
+  }
+  #navbarCollapse .nav-item{
+    padding : 8px 0;
   }
 }
 
