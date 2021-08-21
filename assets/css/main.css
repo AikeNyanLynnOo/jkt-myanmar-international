@@ -687,15 +687,26 @@ figure img{width:300px;}
   z-index: -1;
   opacity: 0.3;
 }
+.about{
+  background-image: url(../images/cover/aboutus.jpg);
+}
+.services {
+  background-image: url(../images/cover/services.jpg);
+}
+.contact {
+  background-image: url(../images/cover/contact.jpg);
+}
+.trainings {
+  background-image: url(../images/cover/training.jpg);
+}
+.activities{
+  background-image: url(../images/cover/activities.jpg);
+  /* background-color: rgba(140, 195, 240, 0.452); */
+}
 /* header area end */
 
 /* ABOUT PAGE START */
 
-/* about header */
-.about{
-  background-image: url(../images/aboutus.jpg);
-}
-/* about header end */
 
 /* ABOUT PAGE END */
 
