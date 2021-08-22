@@ -825,48 +825,6 @@ figure img {
   z-index: 9;
   overflow: hidden;
 }
-.single-team .thumb .author-links {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 36px;
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  transform: scaleX(0);
-  transition: 0.3s;
-}
-.single-team .thumb .author-links ul li {
-  display: inline-block;
-}
-.single-team .thumb .author-links ul li a {
-  font-size: 15px;
-  color: #d5ccc7;
-  margin: 0 12px;
-}
-.single-team .thumb .author-links ul li a:hover {
-  color: #fff;
-}
-.single-team .thumb::before {
-  position: absolute;
-  content: "";
-  background: #000;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  border-radius: 50%;
-  opacity: 0.5;
-  -webkit-transform: translateY(100px);
-  -moz-transform: translateY(100px);
-  -ms-transform: translateY(100px);
-  transform: translateY(100px);
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
 .single-team h3 {
   font-size: 26px;
   color: #131313;
@@ -894,7 +852,76 @@ figure img {
   opacity: 0.5;
 }
 
+.link {
+  color: #2f85bb; 
+  text-decoration: underline
+}
+
+.link-company {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: underline;
+}
 /* ABOUT PAGE END */
+
+/* SERVICE PAGE */
+.overview-blog p {
+  font-size: 15px;
+  color: #808080;
+  margin-bottom: 30px;
+  line-height: 2;
+}
+
+.overview-blog h4 {
+  color: #131313;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 23px;
+  font-family: "Roboto", sans-serif;
+}
+
+.overview-blog span {
+  color: #808080;
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 22px;
+}
+
+.overview-list {
+  color: #808080;
+}
+
+.overview-list li {
+  font-size: 14px;
+  list-style-type: none;
+  padding: 3px 0;
+}
+
+.overview-list-style {
+  font-size: xx-small;
+  padding-right: 5px;
+}
+
+.overview-img {
+  position: relative;
+  height: 450px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.overview-img img {
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
+}
+
+/* SERVICE PAGE END */
 
 /* media query */
 
@@ -1015,7 +1042,7 @@ figure img {
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .small-brand {
     display: block;
   }
@@ -1040,6 +1067,12 @@ figure img {
   }
   .lang{
     margin-top: 15px;
+  }
+  .overview-blog {
+    padding-top: 10px;
+  }
+  .overview-img {
+    margin-top: 10px;
   }
 }
 @media only screen and (max-width: 775px) {
