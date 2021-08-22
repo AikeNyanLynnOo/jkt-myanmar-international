@@ -205,7 +205,6 @@
   background-size: cover;
   color: white;
   height: fit-content;
-  margin-top: 100px;
   padding: 100px;
 }
 .footer .left {
@@ -922,6 +921,100 @@ figure img {
 }
 
 /* SERVICE PAGE END */
+
+/* CONTACT PAGE START */
+
+.contact-header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 32px;
+  color: #131313;
+}
+
+.contact-form {
+  padding-right: 150px;
+}
+
+.contact-form input,.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  border: none;
+  border: 1px solid rgba(138, 138, 138, 0.3);
+  padding: 20px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.contact-form #message {
+  height: 150px;
+  resize: none;
+  margin-bottom: 20px;
+}
+.contact-form *:focus {
+  outline: none;
+  box-shadow: none;
+}
+#btn-submit {
+  padding: 0;
+  display: inline;
+  width: 150px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #131313;
+  letter-spacing: 3px;
+  line-height: 60px;
+  height: 60px;
+  background-color: #ffffff;
+}
+#btn-submit:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.address-row {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+.address-row i {
+  margin-top: 5px;
+  margin-right: 20px;
+}
+.address-row .title,
+.address-row .title a {
+  color: #2a2a31;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: block;
+}
+.address-row .text {
+  color: #8a8a8a;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.address-row .title a:hover {
+  text-decoration: underline;
+}
+.address-row img {
+  width: 25px;
+  margin-right: 20px;
+}
+/* CONTACT PAGE END */
 
 /* media query */
 
