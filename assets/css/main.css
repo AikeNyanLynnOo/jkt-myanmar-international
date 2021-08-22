@@ -1037,6 +1037,12 @@ figure img{width:300px;}
   }
 }
 
+@media only screen and (max-width: 1160px) {
+  .fixed #navbarCollapse .nav-item {
+    padding-bottom: 0px;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   #navbarCollapse ul:first-of-type {
     position: absolute;
