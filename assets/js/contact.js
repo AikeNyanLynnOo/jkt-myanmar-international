@@ -75,6 +75,6 @@ function resetForm() {
 function gotoMail(values) {
   resetForm();
   window.open(
-    `mailto:jkt@gmail.com?subject=${values.subject}&body=${values.message}`
+    `mailto:jkt.mm.int@gmail.com?subject=${values.subject}&body=${values.message}`
   );
 }
