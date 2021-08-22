@@ -28,8 +28,8 @@
   box-shadow: 0 1px 5px 1px #ddd;
 }
 #navbarCollapse {
-  background-color: white;
   text-align: center;
+  background-color: #ffffff;
 }
 #navbarCollapse ul:last-of-type {
   margin-bottom: 0;
@@ -47,6 +47,10 @@
   text-decoration: none;
   color: rgb(46, 46, 46);
   text-align: left;
+}
+.small-brand:hover{
+  text-decoration: none;
+  color : rgb(46, 46, 46);
 }
 
 .lang {
@@ -108,10 +112,6 @@
   opacity: 0.9;
   height: 70px;
   padding: 0 30px;
-}
-
-.fixed #navbarCollapse .nav-item {
-  padding-bottom: 25px;
 }
 
 @keyframes slide-down {
@@ -465,8 +465,8 @@
 }
 
 .bod-header {
-  color: whitesmoke; 
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  color: whitesmoke;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 40px;
   padding: 15px 0;
 }
@@ -479,8 +479,8 @@
 .bod-blockquote {
   padding: 30px 50px 30px 30px;
   border-left: 2px solid #0066ff;
-  background-color: #5be0f70c; 
-  color: rgb(255, 255, 255); 
+  background-color: #5be0f70c;
+  color: rgb(255, 255, 255);
   font-size: 18px !important;
   text-align: center;
   /* text-align: justify; */
@@ -506,7 +506,7 @@
 .double-quote {
   font-size: 70px;
   font-weight: 800;
-  font-family: 'Rampart One', cursive;
+  font-family: "Rampart One", cursive;
 }
 .open-quote {
   float: left;
@@ -529,11 +529,15 @@
 .white {
   color: #fff !important;
 }
-.mt{float: left;}
+.mt {
+  float: left;
+}
 .bg-blue-ui {
   background-color: #708198 !important;
 }
-figure img{width:300px;}
+figure img {
+  width: 300px;
+}
 
 .blog .carousel-indicators {
   left: 0;
@@ -607,7 +611,7 @@ figure img{width:300px;}
 .item-heading-blog a h5 {
   margin: 0;
   line-height: 1;
-  text-decoration:none;
+  text-decoration: none;
   transition: color 0.3s;
 }
 
@@ -686,7 +690,7 @@ figure img{width:300px;}
   z-index: -1;
   opacity: 0.3;
 }
-.about{
+.about {
   background-image: url(../images/cover/aboutus.jpg);
 }
 .services {
@@ -698,7 +702,7 @@ figure img{width:300px;}
 .trainings {
   background-image: url(../images/cover/training.jpg);
 }
-.activities{
+.activities {
   background-image: url(../images/cover/activities.jpg);
   /* background-color: rgba(140, 195, 240, 0.452); */
 }
@@ -713,8 +717,8 @@ figure img{width:300px;}
 
 .about-company {
   padding: 25px 0;
-  color: rgb(53, 53, 53); 
-  font-size: 17px; 
+  color: rgb(53, 53, 53);
+  font-size: 17px;
   text-align: justify;
   letter-spacing: 0.5px;
 }
@@ -732,13 +736,13 @@ figure img{width:300px;}
 }
 
 .hr {
-  width: 80%; 
+  width: 80%;
   padding-bottom: 25px;
   margin-left: 10%;
 }
 
 .info-table tr {
-  height: 50px; 
+  height: 50px;
   font-size: 18px;
 }
 
@@ -759,7 +763,7 @@ figure img{width:300px;}
 }
 
 .section_title p {
-  color: rgb(95, 94, 95);  
+  color: rgb(95, 94, 95);
   font-size: 20px;
   width: 90%;
   line-height: 2;
@@ -790,7 +794,7 @@ figure img{width:300px;}
   -ms-flex-pack: center;
 }
 
-.bod-title-header h3{
+.bod-title-header h3 {
   font-size: 48px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -893,6 +897,23 @@ figure img{width:300px;}
 /* ABOUT PAGE END */
 
 /* media query */
+
+@media only screen and (min-width: 1100px) {
+  .navbar{
+    display : flex;
+    justify-content: space-around;
+  }
+  #navbarCollapse{
+    max-width : fit-content;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .lang {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 899px) {
   .footer {
     display: block;
@@ -969,16 +990,17 @@ figure img{width:300px;}
     font-size: 14px;
   }
   #navbarCollapse .nav-item a {
-    padding: 8px 0;
+    padding: 15px 0;
   }
-  #navbarCollapse ul:last-of-type .btn-group {
-    text-align: center;
-  }
+  
   .bod-blockquote {
     font-size: 15px !important;
   }
   .bod-section {
     padding: 40px 70px;
+  }
+  .lang-xl {
+    display: none;
   }
 }
 @media only screen and (max-width: 992px) and (min-width: 767px) {
@@ -1000,14 +1022,9 @@ figure img{width:300px;}
   .navbar-brand {
     display: none;
   }
-  .navbar-nav {
-    padding: 10px 20px;
-  }
   .nav-item {
-    padding: 10px 0;
     border-bottom: 1px solid rgb(228, 228, 228);
   }
-
   .cover-area .cover-text p {
     margin-bottom: 20px;
   }
@@ -1018,12 +1035,12 @@ figure img{width:300px;}
   .cover-area .cover-text p {
     font-size: 15px;
   }
-  #navbarCollapse ul:last-of-type li:last-of-type {
-    border-bottom: none;
-  }
   #navbarCollapse .nav-item {
-    padding: 8px 0;
-  }  
+    padding: 0;
+  }
+  .lang{
+    margin-top: 15px;
+  }
 }
 @media only screen and (max-width: 775px) {
   .bod-blockquote {
@@ -1043,31 +1060,6 @@ figure img{width:300px;}
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  #navbarCollapse ul:first-of-type {
-    position: absolute;
-    left: 56%;
-    top: 50px;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-  }
-}
-@media only screen and (min-width: 1500px) {
-  #navbarCollapse ul:first-of-type {
-    position: absolute;
-    left: 50%;
-    top: 50px;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-  }
-}
-
 @media only screen and (min-width: 992px) {
   #navbarCollapse {
     display: flex;
@@ -1075,38 +1067,20 @@ figure img{width:300px;}
     align-items: center;
   }
 }
-@media only screen and (max-width: 1072px) and (min-width: 992px) {
-  #navbarCollapse {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .navbar-brand {
-    margin-right: 0;
-  }
-  .lang {
-    padding: 0;
-  }
-  .nav-item a {
-    padding: 0;
-  }
+@media only screen and (max-width: 1150px) and (min-width: 992px) {
   #navbarCollapse *:not(i) {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     line-height: 23px;
-    font-size: 11px;
-  }
-  .fixed #navbarCollapse *:not(i) {
-    font-size: 11px;
-  }
-  .fixed {
-    padding: 0 10px;
-  }
-  .fixed #navbarCollapse .nav-item {
-    padding-bottom: 0px;
+    font-size: 13px;
   }
 }
-
+@media only screen and (max-width: 1061px) and (min-width: 991px) {
+  #navbarCollapse {
+    height: 50px;
+    margin-top: 10px;
+  }
+}
 @media only screen and (max-width: 568px) and (min-width: 377px) {
   .bod-img {
     padding-left: 5px;
