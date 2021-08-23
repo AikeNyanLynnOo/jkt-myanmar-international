@@ -63,6 +63,7 @@ function submitForm(btn) {
     subject: form.subject.value,
     message: form.message.value,
   };
+  console.log(form)
   validateAll(form);
 }
 // reset form
