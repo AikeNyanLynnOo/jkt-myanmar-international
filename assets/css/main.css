@@ -1285,7 +1285,7 @@ figure img {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   height: 80vh;
-  width: 70vw;
+  width: 55vw;
   object-fit: cover;
 }
 .gallery-btn-close {
