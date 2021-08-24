@@ -321,6 +321,11 @@
   font-size: 15px;
   vertical-align: middle;
 }
+#first span a:hover,
+#second span a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+} 
 #last a {
   text-decoration: none;
 }
@@ -520,7 +525,7 @@
 /* index bod section end */
 
 /* Activity Slider */
-.activity-blog {
+.activity-slider-blog {
   margin-top: 60px;
   margin-bottom: 70px;
   padding-top: 5%;
@@ -539,13 +544,13 @@ figure img {
   width: 300px;
 }
 
-.blog .carousel-indicators {
+.slider-blog .carousel-indicators {
   left: 0;
   top: -50px;
 }
 
 /* The colour of the indicators */
-.blog .carousel-indicators li {
+.slider-blog .carousel-indicators li {
   display: block;
   background: #708198;
   border-radius: 50%;
@@ -553,7 +558,7 @@ figure img {
   height: 0px !important;
 }
 
-.blog .carousel-indicators .active {
+.slider-blog .carousel-indicators .active {
   background: #6ce6bd;
 }
 
@@ -1238,6 +1243,110 @@ figure img {
   font-size: 15px;
 }
 /* ACTIVITY PAGE END */
+
+/* ANNOUNCEMENT PAGE */
+.announcement-blog-title {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.announcement-blog h1{
+  font-family: "Rampart One", cursive;
+  color: #004faa;
+  font-size: 52px;
+  font-weight: 900;
+  padding-bottom: 5%;
+}
+
+.announcement-blog h2 {
+  font-family: "Rampart One", cursive;
+  color: #003c80;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 2;
+}
+
+.other-info-blog h3{
+  padding: 50px 0;
+  font-family: "Rampart One", cursive;
+  color: #0e336b;
+  font-weight: 900;
+}
+
+.separator--dotter {
+  padding-top: 60px;
+  border: 0;
+  border-bottom: 5px dotted #559eda;
+  width: 0;
+  -webkit-animation: separator-width 1.5s ease-out forwards;
+          animation: separator-width 1.5s ease-out forwards;
+}
+
+@-webkit-keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.other-info-blog ul {
+  list-style-type: none;
+}
+
+.other-info-blog li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgb(63, 62, 63);
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 6px;
+  list-style-type: none;
+}
+
+.other-info-blog li::before {
+  content: "";
+  background: #0289c8;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.other-info-link-blog {
+  margin: 0px 10% 20px;
+}
+
+.link-style a{
+  font-family: "Rampart One", cursive;
+  text-decoration: none;
+  color: #004faa;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 3;
+}
+
+.link-style a:hover {
+  color: rgb(102, 46, 155);
+}
+
+/* ANNOUNCEMENT PAGE END */
 
 /* media query */
 
