@@ -59,6 +59,14 @@
           >
           Myanmar International
         </a>
+        <a href="/index.html" class="icon-brand">
+          <img
+            src="./assets/images/logo.jpg"
+            alt=""
+            height="50px"
+            width="50px"
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -262,12 +270,12 @@
     <section>
       <div class="container pb-3">
         <h3 class="detail-activity-blog-title pb-3">Activity Gallery</h3>
-        <div class="row detail-activity-blog pb-3">
+        <div class="row detail-activity-blog pb-3" id="detailActivityBlog">
           <div class="col-md-4">
             <div class="detail-activity-blog-img">
               <img
                 src="./assets/images/services/bs2.jpg"
-                alt="Activity Gallery For Business Consultant Services"
+                alt="Activity Gallery For Business Consultant Services" onclick="PopUpImg(this)"
               />
             </div>
           </div>
@@ -275,7 +283,7 @@
             <div class="detail-activity-blog-img">
               <img
                 src="./assets/images/services/bs3.jpg"
-                alt="Activity Gallery For Business Consultant Services"
+                alt="Activity Gallery For Business Consultant Services" onclick="PopUpImg(this)"
               />
             </div>
           </div>
@@ -283,13 +291,40 @@
             <div class="detail-activity-blog-img">
               <img
                 src="./assets/images/services/bs4.jpg"
-                alt="Activity Gallery For Business Consultant Services"
+                alt="Activity Gallery For Business Consultant Services" onclick="PopUpImg(this)"
               />
             </div>
           </div>
         </div>
         <hr class="hr" />
       </div>
+    </section>
+    <section id="overlay" class="gallery-overlay" onclick="hideImg(event)">
+      <img
+        src="./assets/images/icon/close.png"
+        class="gallery-btn-close"
+        alt="close"
+        onclick="hideImg(event)"
+      />
+      <img
+        id="left-arrow"
+        src="assets/images/icon/left-arrow.png"
+        alt="left-arrow"
+        onclick="previousImg(this)"
+      />
+      <img
+        id="img"
+        src=""
+        class="overlay-img"
+        alt="overlay-img"
+        onclick="hideImg(event)"
+      />
+      <img
+        id="right-arrow"
+        src="assets/images/icon/right-arrow.png"
+        alt="right-arrow"
+        onclick="nextImg(this)"
+      />
     </section>
     <!-- Detail Images Blog end -->
 
@@ -424,5 +459,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/js/float-panel.js"></script>
+    <script src="./assets/js/detail-gallery.js"></script>
   </body>
 </html>
