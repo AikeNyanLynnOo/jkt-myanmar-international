@@ -8,6 +8,29 @@
 html {
   scroll-behavior: smooth;
 }
+#toTop {
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+  z-index: 20;
+  border: none;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #029eff;
+  color: #ffffff;
+}
+#toTop:hover,
+#toTop:focus {
+  outline: none;
+  border: none;
+}
 /* Navigation Bar */
 .navbar-brand {
   font-size: 24px;
@@ -173,8 +196,8 @@ html {
 }
 
 .boxed-btn {
-  background: transparent;
-  color: rgb(29, 39, 54);
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
   display: inline-block;
   padding: 18px 30px;
   font-family: "Roboto", sans-serif;
