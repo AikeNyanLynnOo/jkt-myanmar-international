@@ -554,6 +554,8 @@ figure img {
 .slider-blog .carousel-indicators {
   left: 0;
   top: -50px;
+  z-index: 1;
+  text-align: center;
 }
 
 /* The colour of the indicators */
@@ -561,12 +563,12 @@ figure img {
   display: block;
   background: #708198;
   border-radius: 50%;
-  width: 18px;
-  height: 0px !important;
+  width: 21px;
+  
 }
 
 .slider-blog .carousel-indicators .active {
-  background: #6ce6bd;
+  background: #3DA4E9;
 }
 
 .item-carousel-blog-block {
