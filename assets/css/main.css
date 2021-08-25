@@ -691,12 +691,21 @@ figure img {
   letter-spacing: 5px;
 }
 
+.medium-header-text h3 {
+  font-size: 55px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6.5px;
+}
+
 .header-text h3 {
   font-size: 60px;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 10px;
+  line-height: 1;
 }
 
 .overlay {
@@ -1740,6 +1749,10 @@ figure img {
   .mission-blog-img {
     padding-top: 20px;
   }
+  .medium-header-text h3 {
+    font-size: 45px;
+    letter-spacing: 5px;
+  }
 }
 
 @media only screen and (max-width: 310px) {
@@ -1760,5 +1773,9 @@ figure img {
   }
   .carousel-indicators {
     padding-top: 20px;
+  }
+  .medium-header-text h3 {
+    font-size: 43px;
+    letter-spacing: 5px;
   }
 }
