@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 /* Navigation Bar */
@@ -31,7 +31,6 @@ html{
 }
 #navbarCollapse {
   text-align: center;
-  background-color: #ffffff;
 }
 #navbarCollapse ul:last-of-type {
   margin-bottom: 0;
@@ -492,7 +491,7 @@ html{
   background-color: #5be0f70c;
   color: rgb(255, 255, 255);
   font-size: 18px !important;
-  text-align: center;
+  text-align: justify;
   /* text-align: justify; */
 }
 
@@ -526,15 +525,15 @@ html{
   float: right;
 }
 .bod-img {
-  padding-left: 100px;
+  text-align: center;
 }
 /* index bod section end */
 
 /* Activity Slider */
 .activity-slider-blog {
   padding-top: 5%;
-  width : 80%;
-  margin : 60px auto 70px auto;
+  width: 80%;
+  margin: 60px auto 70px auto;
 }
 
 .white {
@@ -563,12 +562,11 @@ figure img {
   display: block;
   background: #708198;
   border-radius: 50%;
-  width: 21px;
-  
+  width: 22px;
 }
 
 .slider-blog .carousel-indicators .active {
-  background: #3DA4E9;
+  background: #3da4e9;
 }
 
 .item-carousel-blog-block {
@@ -1465,6 +1463,9 @@ figure img {
   #navbarCollapse {
     max-width: fit-content;
   }
+  .bod-img {
+    padding-left: 100px;
+  }
 }
 
 @media only screen and (min-width: 991px) {
@@ -1536,6 +1537,7 @@ figure img {
   #navbarCollapse {
     padding-bottom: 20px;
     box-shadow: 0 2px 20px 0px #ddd;
+    background-color: #ffffff;
     margin-top: 10px;
   }
 
@@ -1582,8 +1584,8 @@ figure img {
     padding: 15px 0;
     font-size: 12px;
   }
-  .activity-slider-blog{
-    width : 90%;
+  .activity-slider-blog {
+    width: 90%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1675,9 +1677,6 @@ figure img {
   }
 }
 @media only screen and (max-width: 568px) and (min-width: 377px) {
-  .bod-img {
-    padding-left: 5px;
-  }
   .mission-blog-img {
     padding-top: 20px;
   }
@@ -1699,9 +1698,6 @@ figure img {
 }
 
 @media only screen and (max-width: 376px) {
-  .bod-img {
-    padding-left: 0 !important;
-  }
   .bod-section {
     padding: 40px 40px;
   }
