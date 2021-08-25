@@ -1564,6 +1564,10 @@ figure img {
   #btn-contact {
     width: 220px;
   }
+  #first li,
+  #second li {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
