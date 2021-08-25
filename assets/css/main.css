@@ -424,6 +424,7 @@ html {
   margin-top: 30px;
   margin-bottom: 36px;
 }
+
 .section_title .sub_heading {
   color: rgb(63, 62, 63);
   display: block;
@@ -753,7 +754,7 @@ figure img {
 }
 
 .about-img-blog img {
-  /* position: absolute; */
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
@@ -784,11 +785,12 @@ figure img {
 .mission-blog {
   margin-bottom: 70px;
 }
-
+.mission-blog-img img {
+  object-fit: cover;
+}
 .section_title p {
   color: rgb(95, 94, 95);
   font-size: 20px;
-  width: 90%;
   line-height: 2;
   letter-spacing: 1px;
   padding-bottom: 25px;
@@ -939,9 +941,9 @@ figure img {
 }
 
 .overview-img img {
-  /* position: absolute; */
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 /* SERVICE PAGE END */
@@ -1629,6 +1631,13 @@ figure img {
   .item-box-blog {
     min-height: fit-content;
   }
+  .section_title p {
+    text-align: justify;
+  }
+  .mission-blog-img img {
+    display: block;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 775px) {
   .bod-blockquote {
@@ -1709,9 +1718,6 @@ figure img {
   }
   .mission-blog-img {
     padding-top: 20px;
-  }
-  .mission-blog-img img {
-    width: 98%;
   }
   .announcement-blog h1 {
     font-size: 40px;
