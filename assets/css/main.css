@@ -210,7 +210,7 @@ html {
   background-size: cover;
   color: white;
   height: fit-content;
-  padding: 100px;
+  padding: 100px 100px 10px;
 }
 .footer .left {
   width: 25%;
@@ -336,6 +336,13 @@ html {
 }
 #last a:hover {
   text-decoration: underline;
+}
+.footer-copyright {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  padding-left: 13%;
+  padding-top: 5%;
+  color: rgb(221, 221, 221);
 }
 /* footer end */
 
@@ -683,12 +690,21 @@ figure img {
   background-size: cover;
 }
 
+.position-right {
+  background-position-x: 77%;
+}
+
+.position-left {
+  background-position-x: 30%;
+}
+
 .longer-header-text h3 {
   font-size: 45px;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 5px;
+  line-height: 1.5;
 }
 
 .medium-header-text h3 {
@@ -733,7 +749,7 @@ figure img {
   background-image: url(../images/cover/contact.jpg);
 }
 .trainings {
-  background-image: url(../images/cover/training.jpg);
+  background-image: url(../images/cover/training.png);
 }
 .activities {
   background-image: url(../images/cover/activities.jpg);
@@ -1489,7 +1505,6 @@ figure img {
   .footer {
     display: block;
     padding-top: 50px;
-    padding-bottom: 50px;
   }
   .footer .left,
   .footer .right {
@@ -1507,7 +1522,6 @@ figure img {
     padding: 5px 10px;
   }
   .footer .right .footer-flex-nav .nav .footer-list {
-    list-style-type: disc;
     width: 100%;
   }
   #first li,
@@ -1598,6 +1612,9 @@ figure img {
   .activity-slider-blog {
     width: 90%;
   }
+  .footer-copyright {
+    padding-left: 30%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .small-brand {
@@ -1647,6 +1664,9 @@ figure img {
     display: block;
     width: 100%;
   }
+  .footer-copyright {
+    padding-left: 24%;
+  }
 }
 @media only screen and (max-width: 775px) {
   .bod-blockquote {
@@ -1682,6 +1702,9 @@ figure img {
     line-height: 23px;
     font-size: 13px;
   }
+  .footer-copyright {
+    padding-left: 7%;
+  }
 }
 @media only screen and (max-width: 1061px) and (min-width: 991px) {
   #navbarCollapse {
@@ -1713,6 +1736,12 @@ figure img {
   .small-brand {
     font-size: 18px;
   }
+  .position-right {
+    background-position-x: 70%;
+  }
+  .footer-copyright {
+    padding-left: 10%;
+  }
 }
 
 @media only screen and (max-width: 376px) {
@@ -1739,6 +1768,10 @@ figure img {
   }
   .other-info-blog h3 {
     padding: 35px 0;
+  }
+  .footer-copyright {
+    font-size: 10px;
+    padding-left: 10%;
   }
 }
 
@@ -1777,5 +1810,9 @@ figure img {
   .medium-header-text h3 {
     font-size: 43px;
     letter-spacing: 5px;
+  }
+  .footer-copyright {
+    font-size: 8px;
+    padding-left: 8%;
   }
 }
