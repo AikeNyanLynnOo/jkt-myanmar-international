@@ -567,6 +567,11 @@ html {
 }
 .bod-img {
   text-align: center;
+  width: 100%;
+}
+.bod-img img {
+  width: 80%;
+  margin : 0 auto;
 }
 /* index bod section end */
 

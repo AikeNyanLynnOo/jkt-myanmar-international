@@ -2,7 +2,9 @@ var overlay = document.getElementById("overlay");
 var currentImg = 1;
 function setCurrentImg(current) {
   currentImg = parseInt(current);
-  document.getElementById("img").src = `./assets/images/gallery/${current}.jpg`;
+  document.getElementById("img").src =
+    `./assets/images/gallery/${current}.jpg` ||
+    `./assets/images/gallery/${current}.JPG`;
   if (currentImg === 41) {
     document.getElementById("right-arrow").style.display = "none";
   } else if (currentImg === 1) {
@@ -26,6 +28,7 @@ function prevImg() {
 function showImg(img) {
   overlay.style.display = "block";
   var current = img.src.split("/").pop().split(".")[0];
+  // var type = img.src.split("/").pop().split(".")[1];
   setCurrentImg(current);
 }
 function hideImg(e) {
