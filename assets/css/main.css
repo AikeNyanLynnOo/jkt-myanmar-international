@@ -547,8 +547,8 @@ html {
   font-size: 16px;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
-  width : fit-content;
-  margin : 10px auto;
+  width: fit-content;
+  margin: 10px auto;
 }
 .single-item .bod-name span {
   color: #fff;
@@ -859,9 +859,9 @@ figure img {
 .mission-blog-img img {
   object-fit: cover;
 }
-.section_title{
+.section_title {
   width: 100%;
-  margin : 0 auto;
+  margin: 0 auto;
 }
 .section_title p {
   color: rgb(95, 94, 95);
@@ -1818,6 +1818,12 @@ figure img {
   }
   .other-info-blog h3 {
     padding: 35px 0;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .small-brand {
+    font-size: 12px;
   }
 }
 
