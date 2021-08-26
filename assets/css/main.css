@@ -213,8 +213,8 @@ html {
 
 .boxed-btn:hover {
   background: rgba(167, 205, 238, 0.342);
-  border: 1px solid rgba(213, 224, 235, 0.342);
-  color: #131313 !important;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -241,7 +241,6 @@ html {
 .footer .left {
   width: 20%;
   margin-right: 50px;
-  /* display: flex; */
 }
 
 .footer .left a {
@@ -316,8 +315,8 @@ html {
   -o-transition: all 0.5s ease;
 }
 .footer-flex button:hover {
-  color: #000000;
-  background-color: #a9b7d146;
+  color: #5e6162;
+  background-color: rgb(192, 192, 192);
 }
 .footer-flex-nav {
   display: flex;
@@ -376,9 +375,10 @@ html {
 .footer-copyright {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
-  padding-left: 13%;
-  padding-top: 5%;
-  color: rgb(221, 221, 221);
+  background-color: #171919;
+  text-align: center;
+  color: #ffffff;
+  line-height: 50px;
 }
 /* footer end */
 
@@ -498,9 +498,8 @@ html {
   text-transform: uppercase;
 }
 .about-boxed-btn:hover {
-  background: #5386a81f;
-  color: rgb(103, 108, 136) !important;
-  border: 1px solid #5386a833;
+  background: rgba(167, 205, 238, 0.342);
+  border: 1px solid rgb(0, 0, 0, 0.1);
   text-decoration: none;
 }
 .about-boxed-btn:focus {
@@ -548,7 +547,8 @@ html {
   font-size: 16px;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
-  padding-left: 20%;
+  width : fit-content;
+  margin : 10px auto;
 }
 .single-item .bod-name span {
   color: #fff;
@@ -574,13 +574,13 @@ html {
 }
 .bod-img1 img {
   width: 80%;
-  margin : 0 auto;
+  margin: 0 auto;
 }
 
 .bod-img2 img {
   width: 80%;
   height: 100%;
-  margin : 0 auto;
+  margin: 0 auto;
 }
 /* index bod section end */
 
@@ -855,10 +855,13 @@ figure img {
 }
 
 .mission-blog {
-  margin-bottom: 70px;
 }
 .mission-blog-img img {
   object-fit: cover;
+}
+.section_title{
+  width: 100%;
+  margin : 0 auto;
 }
 .section_title p {
   color: rgb(95, 94, 95);
@@ -1663,9 +1666,6 @@ figure img {
   .activity-slider-blog {
     width: 90%;
   }
-  .footer-copyright {
-    padding-left: 30%;
-  }
 }
 @media only screen and (max-width: 768px) {
   .small-brand {
@@ -1715,9 +1715,6 @@ figure img {
     display: block;
     width: 100%;
   }
-  .footer-copyright {
-    padding-left: 24%;
-  }
   .about-info {
     margin: 0 10px;
     padding: 30px 0 50px;
@@ -1761,9 +1758,6 @@ figure img {
     line-height: 23px;
     font-size: 13px;
   }
-  .footer-copyright {
-    padding-left: 7%;
-  }
 }
 @media only screen and (max-width: 1061px) and (min-width: 991px) {
   #navbarCollapse {
@@ -1798,9 +1792,6 @@ figure img {
   .position-right {
     background-position-x: 70%;
   }
-  .footer-copyright {
-    padding-left: 10%;
-  }
 }
 
 @media only screen and (max-width: 376px) {
@@ -1827,10 +1818,6 @@ figure img {
   }
   .other-info-blog h3 {
     padding: 35px 0;
-  }
-  .footer-copyright {
-    font-size: 10px;
-    padding-left: 10%;
   }
 }
 
@@ -1869,9 +1856,5 @@ figure img {
   .medium-header-text h3 {
     font-size: 43px;
     letter-spacing: 5px;
-  }
-  .footer-copyright {
-    font-size: 8px;
-    padding-left: 8%;
   }
 }
