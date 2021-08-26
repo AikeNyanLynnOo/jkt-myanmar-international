@@ -735,6 +735,7 @@ figure img {
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height : 70vh;
 }
 
 .training-position {
