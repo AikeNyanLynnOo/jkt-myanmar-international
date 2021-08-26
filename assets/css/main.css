@@ -737,8 +737,8 @@ figure img {
   background-size: cover;
 }
 
-.position-right {
-  background-position-x: 77%;
+.training-position {
+  background-position-y: 50%;
 }
 
 .position-left {
@@ -796,7 +796,7 @@ figure img {
   background-image: url(../images/cover/contact.jpg);
 }
 .trainings {
-  background-image: url(../images/cover/training.png);
+  background-image: url(../images/cover/training.jpg);
 }
 .activities {
   background-image: url(../images/cover/activities.jpg);
@@ -1789,8 +1789,8 @@ figure img {
   .small-brand {
     font-size: 18px;
   }
-  .position-right {
-    background-position-x: 70%;
+  .training-position {
+    background-position-x: 40%;
   }
 }
 
