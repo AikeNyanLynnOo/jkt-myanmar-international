@@ -42,6 +42,10 @@ html {
   -o-transition: font-size 180ms ease;
 }
 
+.mm-nav-brand {
+  font-size: 22px;
+}
+
 .navbar-brand.scrolled {
   font-size: 1.8em;
 }
@@ -81,6 +85,10 @@ html {
   color: rgb(46, 46, 46);
 }
 
+.mm-nav a{
+  font-size: 14px !important;
+}
+
 .lang {
   padding: 0 20px;
 }
@@ -117,8 +125,7 @@ html {
   transition: all 0.5s ease;
 }
 #navbarCollapse .dropdown-item {
-  width: 16em;
-  padding: 0 10px;
+  padding: 0 15px;
   line-height: 3em;
   font-size: 13px;
 }
@@ -142,6 +149,10 @@ html {
   padding: 0 30px;
 }
 
+.fixed .mm-nav a{
+  font-size: 13px !important;
+}
+
 @keyframes slide-down {
   0% {
     opacity: 0;
@@ -151,6 +162,16 @@ html {
     opacity: 0.9;
     transform: translateY(0);
   }
+}
+
+.btn1 {
+  border-radius: 5px 0 0 5px;
+}
+.btn2 {
+  border-radius: 0;
+}
+.btn3 {
+  border-radius: 0 5px 5px 0;
 }
 /* Navgation end */
 
@@ -1534,6 +1555,45 @@ figure img {
 
 /* media query */
 
+@media only screen and (max-width: 2400px) and (min-width: 1470px) {
+  .mm-nav-brand {
+    font-size: 26px;
+  }
+  .mm-nav a{
+    font-size: 17px !important;
+  }
+  .mm-nav > a {
+    padding: 20px 5px !important;
+  }
+  .fixed .mm-nav a{
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 2400px) and (min-width: 1691px) {
+  .bod-blockquote {
+    font-size: 28px !important;
+  }
+  .bod-name h4{
+    font-size: 26px !important;
+  }
+  .bod-name span{
+    font-size: 24px !important;
+  }
+}
+
+@media only screen and (max-width: 1691px) and (min-width: 1470px) {
+  .bod-blockquote {
+    font-size: 22px !important;
+  }
+  .bod-name h4{
+    font-size: 20px !important;
+  }
+  .bod-name span{
+    font-size: 18px !important;
+  }
+}
+
 @media only screen and (min-width: 1100px) {
   .navbar {
     display: flex;
@@ -1598,10 +1658,36 @@ figure img {
     width: 100%;
   }
 }
+@media only screen and (max-width: 1231px){
+  .mm-nav a{
+    font-size: 12px !important;
+  }
+  .mm-nav > a {
+    padding: 20px 3.5px !important;
+  }
+  .fixed .mm-nav a{
+    font-size: 10px !important;
+  }
+  .mm-nav-brand {
+    font-size: 19px;
+  }
+}
 @media only screen and (max-width: 1059px) {
   .footer {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .mm-nav a{
+    font-size: 12px !important;
+  }
+  .mm-nav > a {
+    padding: 20px 3px !important;
+  }
+  .fixed .mm-nav a{
+    font-size: 10px !important;
+  }
+  .mm-nav-brand {
+    font-size: 19px;
   }
 }
 
@@ -1634,7 +1720,7 @@ figure img {
   #navbarCollapse .nav-item a {
     padding: 15px 0;
   }
-
+  
   .bod-blockquote {
     font-size: 15px !important;
   }
@@ -1745,6 +1831,18 @@ figure img {
   .fixed #navbarCollapse .nav-item {
     padding-bottom: 0px;
   }
+  .mm-nav-brand {
+    font-size: 17px;
+  }
+  .mm-nav a{
+    font-size: 12px !important;
+  }
+  .mm-nav > a {
+    padding: 20px 5px !important;
+  }
+  .fixed .mm-nav a{
+    font-size: 10px !important;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -1770,6 +1868,18 @@ figure img {
   }
   .navbar-brand {
     font-size: 19px;
+  }
+  .mm-nav-brand {
+    font-size: 17px;
+  }
+  .mm-nav a{
+    font-size: 11px !important;
+  }
+  .mm-nav > a {
+    padding: 20px 5px !important;
+  }
+  .fixed .mm-nav a{
+    font-size: 10px !important;
   }
 }
 @media only screen and (max-width: 568px) and (min-width: 377px) {
