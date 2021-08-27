@@ -490,11 +490,8 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  border: 0;
-  border: 1px solid #131313;
+  border: 1px solid #c6c6c6;
   letter-spacing: 3px;
-  text-align: center;
-  color: #131313 !important;
   text-transform: uppercase;
 }
 .about-boxed-btn:hover {
@@ -744,6 +741,10 @@ figure img {
 
 .position-left {
   background-position-x: 30%;
+}
+
+.activity-postion {
+  background-position-x: 50%;
 }
 
 .longer-header-text h3 {
