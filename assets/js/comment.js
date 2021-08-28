@@ -1,17 +1,43 @@
 // handleblur
 var form = document.getElementById("comment-form");
+var mmform = document.getElementById("comment-form-mm");
+var jpform = document.getElementById("comment-form-jp");
 form && form.comment.addEventListener("blur", function (event) {
-    event.preventDefault();
-    validateField(this);
+  event.preventDefault();
+  validateField(this, 'eng');
+});
+mmform && mmform.comment.addEventListener("blur", function (event) {
+  event.preventDefault();
+  validateField(this, 'mm');
+});
+jpform && jpform.comment.addEventListener("blur", function (event) {
+  event.preventDefault();
+  validateField(this, 'jp');
 });
 
-function validateField(field) {
+function validateField(field, lang) {
   var isOk = false;
-  if (field.value === "") {
-    onInvalid(field, "Please enter a some text to send.");
+  if(lang === "mm") {
+    if (field.value === "") {
+      onInvalid(field, "ကျေးဇူးပြု၍ မှတ်ချက်ပေးပို့ရန် စာသားအချို့ ရိုက်ထည့်ပေးပါ။");
+    } else {
+      onValid(field);
+      isOk = true;
+    }
+  }else if(lang === "jp") {
+    if (field.value === "") {
+      onInvalid(field, "送信するテキストを入力してください");
+    } else {
+      onValid(field);
+      isOk = true;
+    }
   } else {
-    onValid(field);
-    isOk = true;
+    if (field.value === "") {
+      onInvalid(field, "Please enter some text to send.");
+    } else {
+      onValid(field);
+      isOk = true;
+    }
   }
   return isOk;
 }
