@@ -1,33 +1,73 @@
 // handleblur
-var form = document.getElementById("contact-form");
-form &&
-  form.subject.addEventListener("blur", function (event) {
-    validateField(this);
+var formEng = document.getElementById("contact-form");
+var formMm = document.getElementById("contact-form-mm");
+var formJp = document.getElementById("contact-form-jp");
+formEng &&
+  formEng.subject.addEventListener("blur", function (event) {
+    validateField(this,'eng');
   });
-form &&
-  form.message.addEventListener("blur", function (event) {
-    validateField(this);
+formEng &&
+  formEng.message.addEventListener("blur", function (event) {
+    validateField(this,'eng');
+  });
+formMm &&
+  formMm.subject.addEventListener("blur", function (event) {
+    validateField(this,'mm');
+  });
+formMm &&
+  formMm.message.addEventListener("blur", function (event) {
+    validateField(this,'mm');
+  });
+formJp &&
+  formJp.subject.addEventListener("blur", function (event) {
+    validateField(this,'jp');
+  });
+formJp &&
+  formJp.message.addEventListener("blur", function (event) {
+    validateField(this,'jp');
   });
 
-function validateField(field) {
+function validateField(field, lang) {
   var isOk = false;
-  if (field.type === "text") {
-    if (field.value.length < 3) {
-      onInvalid(field, "Subject should contain at least 3 characters");
-    } else if (field.value.length > 60) {
-      onInvalid(field, "Subject should be at most 60 characters");
+  if (lang === "mm") {
+    if (field.type === "text") {
+      if (field.value.length < 3) {
+        onInvalid(field, "ခေါင်းစဉ်အတွက် အနည်းဆုံး စာလုံး ၃ လုံး ရိုက်ထည့်ပေးပါ။");
+      } else if (field.value.length > 60) {
+        onInvalid(field, "ခေါင်းစဉ် သည် စားလုံးရေ ၆၀ ထက်မကျော်သင့်ပါ။");
+      } else {
+        onValid(field);
+        isOk = true;
+      }
     } else {
-      onValid(field);
-      isOk = true;
+      if (field.value === "") {
+        onInvalid(field, "ပို့ချင်သော စာ ကို ရိုက်ထည့်ပေးပါ။");
+      } else {
+        onValid(field);
+        isOk = true;
+      }
     }
+  } else if (lang === "jp") {
   } else {
-    if (field.value === "") {
-      onInvalid(field, "Please enter a message");
+    if (field.type === "text") {
+      if (field.value.length < 3) {
+        onInvalid(field, "Subject should contain at least 3 characters");
+      } else if (field.value.length > 60) {
+        onInvalid(field, "Subject should be at most 60 characters");
+      } else {
+        onValid(field);
+        isOk = true;
+      }
     } else {
-      onValid(field);
-      isOk = true;
+      if (field.value === "") {
+        onInvalid(field, "Please enter a message");
+      } else {
+        onValid(field);
+        isOk = true;
+      }
     }
   }
+
   return isOk;
 }
 
@@ -63,7 +103,7 @@ function submitForm(btn) {
     subject: form.subject.value,
     message: form.message.value,
   };
-  console.log(form)
+  console.log(form);
   validateAll(form);
 }
 // reset form
