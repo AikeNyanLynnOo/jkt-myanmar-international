@@ -233,8 +233,8 @@ html {
 }
 
 .boxed-btn:hover {
-  background: rgba(167, 205, 238, 0.342);
-  border: 1px solid rgb(255, 255, 255, 0.5);
+  background: #5bafe7;
+  border: 1px solid rgba(238, 238, 238, 0.5);
   color: #ffffff;
   text-decoration: none;
   transition: all 0.5s ease;
