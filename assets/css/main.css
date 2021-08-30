@@ -208,8 +208,7 @@ html {
 }
 
 .cover-area .cover-text h3 {
-  /* color: #ffffff; */
-  color: rgb(0, 0, 0, 0.8);
+  color: #ffffff;
   font-weight: 700;
   font-size: 70px;
   text-transform: uppercase;
@@ -220,24 +219,21 @@ html {
 .cover-area .cover-text p {
   font-size: 20px;
   font-weight: 400;
-  /* color: #ffffff; */
-  color: rgb(0, 0, 0, 0.8);
+  color: #ffffff;
   margin-bottom: 50px;
   margin-top: 15px;
 }
 
 .boxed-btn {
   background: rgba(0, 0, 0, 0);
-  /* color: #ffffff; */
-  color: rgb(0, 0, 0, 0.8);
+  color: #ffffff;
   display: inline-block;
   padding: 18px 30px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
-  /* border: 1px solid rgb(255, 255, 255); */
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
   letter-spacing: 2px;
   text-transform: uppercase;
 }
