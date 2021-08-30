@@ -1489,7 +1489,7 @@ figure img {
 .announcement-blog-title h1 {
   /* font-family: "Rampart One", cursive; */
   font-family: "Roboto", sans-serif;
-  color: #004faa;
+  color: #5bafe7;
   font-size: 58px;
   font-weight: 900;
   padding-bottom: 5%;
@@ -1499,7 +1499,7 @@ figure img {
 .announcement-blog-title h2 {
   /* font-family: "Rampart One", cursive; */
   font-family: "Roboto", sans-serif;
-  color: #003c80;
+  color: #5bafe7;
   font-size: 46px;
   font-weight: 900;
   line-height: 3;
@@ -1508,7 +1508,7 @@ figure img {
 .other-info-blog h3 {
   padding: 50px 0;
   /* font-family: "Rampart One", cursive; */
-  color: #0e336b;
+  color: #5bafe7;
   font-weight: 900;
   line-height: 1.5;
 }
@@ -1516,7 +1516,7 @@ figure img {
 .separator--dotter {
   padding-top: 20px;
   border: 0;
-  border-bottom: 5px dotted #559eda;
+  border-bottom: 5px dotted #5bafe7;
   width: 0;
   -webkit-animation: separator-width 1.5s ease-out forwards;
   animation: separator-width 1.5s ease-out forwards;
@@ -1557,7 +1557,7 @@ figure img {
 
 .other-info-blog li::before {
   content: "";
-  background: #0289c8;
+  background: #5bafe7;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -1575,14 +1575,14 @@ figure img {
 .link-style a {
   /* font-family: "Rampart One", cursive; */
   text-decoration: none;
-  color: #004faa;
+  color: #5bafe7;
   font-weight: 900;
   font-style: italic;
   line-height: 3;
 }
 
 .link-style a:hover {
-  color: rgb(102, 46, 155);
+  color: #0032bd;
 }
 
 /* ANNOUNCEMENT PAGE END */
