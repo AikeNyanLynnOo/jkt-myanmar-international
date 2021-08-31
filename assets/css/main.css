@@ -1455,7 +1455,7 @@ figure img {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 5px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.801);
   padding: 10%;
 }
 
@@ -1476,6 +1476,10 @@ figure img {
   font-size: 46px;
   font-weight: 900;
   line-height: 3;
+}
+
+.announcement-blog-title img {
+  border-radius: 40%;
 }
 
 .other-info-blog h3 {
