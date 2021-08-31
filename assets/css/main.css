@@ -423,14 +423,17 @@ html {
 .index-about .experience {
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  left: 50%;
   display: inline-block;
-  padding: 50px 40px;
   background: rgba(255, 255, 255, 0.61);
   text-align: center;
-  left: 50%;
+  min-width : 200px;
+  padding : 40px 10px; 
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
 }
 .index-about .experience h1 {
   color: #131313;
