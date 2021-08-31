@@ -1,4 +1,11 @@
 var toTopBtn = document.getElementById("toTop");
+
+var today = new Date();
+var foundingDate = new Date(2019, 3, 1);
+var expYears = today.getFullYear() - foundingDate.getFullYear();
+
+document.getElementById("years-of-exp").innerHTML = expYears;
+
 toTopBtn.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
