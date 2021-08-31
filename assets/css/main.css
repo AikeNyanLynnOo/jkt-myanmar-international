@@ -985,12 +985,9 @@ figure img {
   text-decoration: underline;
 }
 
-.link-company {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  color: #000;
-  text-decoration: underline;
+.link-icon {
+  font-size: 12px;
+  padding-left: 3px;
 }
 /* ABOUT PAGE END */
 
