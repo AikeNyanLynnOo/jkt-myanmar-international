@@ -182,7 +182,7 @@ html {
   background-color: #5bafe7;
 }
 .btn:hover {
-  background-color: rgb(91, 175, 231, 0.5) !important;
+  background-color: rgba(138, 138, 138, 0.5) !important;
 }
 .btn:focus{
   box-shadow: none !important;
