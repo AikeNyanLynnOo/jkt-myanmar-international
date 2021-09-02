@@ -96,9 +96,8 @@ html {
   padding: 20px 20px;
 }
 
-
-.nav-item .nav-link{
-  color : #5bafe7 !important;
+.nav-item .nav-link {
+  color: #5bafe7 !important;
 }
 
 .nav-item:hover a,
@@ -172,12 +171,21 @@ html {
 
 .btn1 {
   border-radius: 5px 0 0 5px;
+  background-color: #5bafe7;
 }
 .btn2 {
   border-radius: 0;
+  background-color: #5bafe7;
 }
 .btn3 {
   border-radius: 0 5px 5px 0;
+  background-color: #5bafe7;
+}
+.btn:hover {
+  background-color: rgb(91, 175, 231, 0.5) !important;
+}
+.btn:focus{
+  box-shadow: none !important;
 }
 /* Navgation end */
 
@@ -427,13 +435,13 @@ html {
   display: inline-block;
   background: rgba(255, 255, 255, 0.61);
   text-align: center;
-  min-width : 200px;
-  padding : 40px 10px; 
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  -o-transform: translate(-50%,-50%);
+  min-width: 200px;
+  padding: 40px 10px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 .index-about .experience h1 {
   color: #131313;
@@ -453,7 +461,7 @@ html {
   padding-top: 90px;
   padding-bottom: 100px;
 }
-.about-info h3{
+.about-info h3 {
   line-height: 1.7em;
 }
 
@@ -783,12 +791,12 @@ figure img {
   font-size: 60px;
   font-family: "Roboto", sans-serif;
   /* color: rgb(0, 0, 0, 0.8); */
-  color : #fff;
+  color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 5px;
   line-height: 1.5;
-  width : 100%;
+  width: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -799,14 +807,13 @@ figure img {
   -o-transform: translate(-50%, -50%);
   z-index: 2;
 }
-.header .bg-cover{
+.header .bg-cover {
   position: absolute;
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.164);
   z-index: 1;
 }
-
 
 .header img {
   position: absolute;
@@ -1812,7 +1819,6 @@ figure img {
   .blog-day {
     font-size: 20px;
   }
-  
 }
 @media only screen and (max-width: 992px) and (min-width: 767px) {
   .about-img-blog {
@@ -1843,14 +1849,13 @@ figure img {
   .header {
     height: 300px;
   }
-  
+
   .header h3 {
     font-size: 40px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  
   .header {
     height: 250px;
   }
