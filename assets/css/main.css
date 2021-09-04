@@ -185,7 +185,7 @@ html {
 .btn:hover {
   background-color: rgba(138, 138, 138, 0.5) !important;
 }
-.btn:focus{
+.btn:focus {
   box-shadow: none !important;
 }
 /* Navgation end */
@@ -563,9 +563,10 @@ html {
 }
 
 .single-item {
-  display : flex;
+  display: flex;
   align-items: center;
   height: auto;
+  margin: 0 auto;
 }
 
 .bod-blockquote {
@@ -577,7 +578,7 @@ html {
   text-align: justify;
 }
 
-.mm-quote{
+.mm-quote {
   line-height: 1.7em;
 }
 
@@ -1369,7 +1370,7 @@ figure img {
 }
 .activity-gallery img {
   display: block;
-  min-height: 200px;
+  height: 200px;
   object-fit: cover;
   cursor: pointer;
 }
@@ -1754,7 +1755,7 @@ figure img {
     font-size: 15px !important;
   }
   .bod-section {
-    padding: 40px 75px;
+    padding: 40px 60px;
   }
   .long-quote {
     font-size: 11px;
@@ -1790,9 +1791,6 @@ figure img {
 
   .bod-blockquote {
     font-size: 15px !important;
-  }
-  .bod-section {
-    padding: 40px 70px;
   }
   .lang-xl {
     display: none;
@@ -1848,26 +1846,18 @@ figure img {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .header {
     height: 300px;
   }
-
   .header h3 {
     font-size: 40px;
   }
-}
 
-@media only screen and (max-width: 500px) {
-  .header {
-    height: 250px;
+  .bod-blockquote {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .header h3 {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
   .small-brand {
     display: block;
   }
@@ -1924,13 +1914,27 @@ figure img {
     padding-top: 60px;
     padding-bottom: 20px;
   }
+  .bod-section {
+    padding: 10px;
+  }
 }
+
+@media only screen and (max-width: 500px) {
+  .header {
+    height: 250px;
+  }
+  .header h3 {
+    font-size: 30px;
+  }
+  .bod-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 @media only screen and (max-width: 775px) {
   .bod-blockquote {
     font-size: 14px !important;
-  }
-  .bod-section {
-    padding: 40px 60px;
   }
   .mission-blog-img {
     padding-top: 20px;
@@ -2027,7 +2031,8 @@ figure img {
 
 @media only screen and (max-width: 376px) {
   .bod-section {
-    padding: 40px 40px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .small-brand {
     font-size: 16px;
@@ -2094,14 +2099,17 @@ figure img {
   .bod-blockquote {
     padding: 10px;
   }
-  .bod-section {
-    padding: 10px;
-  }
   .carousel-indicators {
     padding-top: 20px;
   }
   .medium-header-text h3 {
     font-size: 43px;
     letter-spacing: 5px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 450px) {
+  .activity-gallery img {
+    height: 270px;
   }
 }
